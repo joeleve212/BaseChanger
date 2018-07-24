@@ -1,5 +1,7 @@
 //import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
 
+import kotlin.MathKt;
+
 import java.util.Scanner;
 public class BaseConv {
     public static void main(String[] args) {
@@ -15,21 +17,30 @@ public class BaseConv {
 //TODO: do I need separate files? integration with Spring/firebase
 
         String valueClone = inputNum.value;
-        for (int i = 0; i<inputNum.digits.length; i++) {
+        for (int i = inputNum.digits.length - 1; i>=0; i--) {
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
         }
         long decNum = convertToDec(inputNum);
-        System.out.println(decNum);
+        System.out.println(convertToDec(inputNum));
 
     }
-    static private long convertToDec(Object inNum){
+    static long convertToDec(Object inNum){
+        long total = 0;
+        for(int i = 0; i < inNum.digits.length; i++){
+    //TODO: check for and convert letters. convert all to nums instead of chars
+            total += Math.pow(inNum.base, i) * inNum.digits[i];
+        }
+        return total;
 //TODO: make this method do things!
-        return 4;
+
     }
-    static private String convertToBase(int newBase, long decNum){
+    static String convertToBase(int newBase, long decNum){
 //TODO: make this method do things!
         return "73E";
+    }
+    static String fullConvert(Object inNum){
+        return inputNum.value;
     }
 }
 
