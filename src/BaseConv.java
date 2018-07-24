@@ -10,7 +10,7 @@ public class BaseConv {
         inputNum.digits = new char[inputNum.value.length()];
         System.out.println("What base is your input value?");
         inputNum.base = a.nextInt();
-        
+
 //TODO: check that input num is that base, ask for return base, convert & return
 //TODO: Decide convert method, either input->decimal->output or new equation for input->output
 //TODO: GITHUB SETUP!!
@@ -21,7 +21,7 @@ public class BaseConv {
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
         }
-        System.out.println("\n" + inputNum.digits[2]);
+        //System.out.println("\n" + inputNum.digits[2]);
 
     }
 }
