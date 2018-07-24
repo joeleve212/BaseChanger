@@ -12,17 +12,24 @@ public class BaseConv {
         inputNum.base = a.nextInt();
 
 //TODO: check that input num is that base, ask for return base, convert & return
-//TODO: Decide convert method, either input->decimal->output or new equation for input->output
-//TODO: GITHUB SETUP!!
+//TODO: do I need separate files? integration with Spring/firebase
 
         String valueClone = inputNum.value;
-        //char[] digits = new char[inputNum.length()];
         for (int i = 0; i<inputNum.digits.length; i++) {
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
         }
-        //System.out.println("\n" + inputNum.digits[2]);
+        long decNum = convertToDec(inputNum);
+        System.out.println(decNum);
 
+    }
+    static private long convertToDec(Object inNum){
+//TODO: make this method do things!
+        return 4;
+    }
+    static private String convertToBase(int newBase, long decNum){
+//TODO: make this method do things!
+        return "73E";
     }
 }
 
@@ -31,3 +38,4 @@ class Number {                 //create blank object for input number
     char[] digits;
     int base;
 }
+
