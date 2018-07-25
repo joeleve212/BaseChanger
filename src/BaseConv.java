@@ -21,32 +21,46 @@ public class BaseConv {
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
         }
-        long decNum = convertToDec(inputNum);
+        //long decNum = convertToDec(inputNum);
         System.out.println(convertToDec(inputNum));
 
     }
-    static long convertToDec(Object inNum){
+
+
+    static long convertToDec(Number inNum){
         long total = 0;
-        for(int i = 0; i < inNum.digits.length; i++){
+
+        for(int j = 0; j < inNum.digits.length; j++){
     //TODO: check for and convert letters. convert all to nums instead of chars
-            total += Math.pow(inNum.base, i) * inNum.digits[i];
+            int thing = (int) Math.pow(inNum.base, j);
+            System.out.println(thing);
+            total += thing * Character.getNumericValue(inNum.digits[j]);
+            System.out.println(total + " = " + inNum.base +"^"+j+"  *"+inNum.digits[j]);
+
         }
+        System.out.println("  ");
         return total;
 //TODO: make this method do things!
 
     }
-    static String convertToBase(int newBase, long decNum){
+
+
+    static String decToBase(int newBase, long decNum){
 //TODO: make this method do things!
         return "73E";
     }
-    static String fullConvert(Object inNum){
-        return inputNum.value;
+
+
+    static String fullConvert(Number inNum){
+
+        return inNum.value;
     }
 }
 
 class Number {                 //create blank object for input number
     String value;
     char[] digits;
+    int[] digVals;
     int base;
 }
 
