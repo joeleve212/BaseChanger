@@ -18,8 +18,8 @@
       <file leaf-file-name="BaseConv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BaseConv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="286">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,6 +45,12 @@
         <option value="$PROJECT_DIR$/src/BaseConv.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="770" />
@@ -174,14 +180,14 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32853025" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32853025" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32853025" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47838616" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3443804" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32853025" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
@@ -277,8 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseConv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="286">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

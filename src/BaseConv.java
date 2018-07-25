@@ -1,6 +1,6 @@
 //import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
 
-import kotlin.MathKt;
+//import kotlin.MathKt;
 
 import java.util.Scanner;
 public class BaseConv {
@@ -32,9 +32,7 @@ public class BaseConv {
 
         for(int j = 0; j < inNum.digits.length; j++){
     //TODO: check for and convert letters. convert all to nums instead of chars
-            int thing = (int) Math.pow(inNum.base, j);
-            System.out.println(thing);
-            total += thing * Character.getNumericValue(inNum.digits[j]);
+            total += Math.pow(inNum.base, j) * Character.getNumericValue(inNum.digits[j]);
             System.out.println(total + " = " + inNum.base +"^"+j+"  *"+inNum.digits[j]);
 
         }
@@ -57,10 +55,12 @@ public class BaseConv {
     }
 }
 
+
+
 class Number {                 //create blank object for input number
     String value;
     char[] digits;
-    int[] digVals;
+
     int base;
 }
 
