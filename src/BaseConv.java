@@ -10,9 +10,9 @@ public class BaseConv {
         Number inputNum = new Number();
         inputNum.value = a.next().toUpperCase();
         inputNum.digits = new char[inputNum.value.length()];
-        System.out.println("What base is your input value?");
+        System.out.println("What base is your input value? (2-36 is all valid) ");
         inputNum.base = a.nextInt();
-
+    //TODO: try/catch for legit old and new bases
 //TODO: check that input num is that base, ask for return base, convert & return
 //TODO: do I need separate files? integration with Spring/firebase
 
@@ -21,8 +21,7 @@ public class BaseConv {
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
         }
-        //long decNum = convertToDec(inputNum);
-        System.out.println(convertToDec(inputNum));
+        convertDown(inputNum);
 
     }
 
@@ -31,15 +30,9 @@ public class BaseConv {
         long total = 0;
 
         for(int j = 0; j < inNum.digits.length; j++){
-    //TODO: check for and convert letters. convert all to nums instead of chars
             total += Math.pow(inNum.base, j) * Character.getNumericValue(inNum.digits[j]);
-            System.out.println(total + " = " + inNum.base +"^"+j+"  *"+inNum.digits[j]);
-
         }
-        System.out.println("  ");
         return total;
-//TODO: make this method do things!
-
     }
 
 
@@ -49,10 +42,27 @@ public class BaseConv {
     }
 
 
-    static String fullConvert(Number inNum){
-
-        return inNum.value;
+    static void convertDown(Number inNum){
+/*TODO: add one to 'tens' digit everytime base is subtracted from total dec value of
+ TODO: leftover -> ones digit, check that each digit is under newBase
+ need more efficient idea than this, but it should work
+*/
+        for(int i = 0; i<inNum.digits.length; i++){
+    //TODO: assign another array [i] = decimal versions of digits
+    //if otherarray [i] >= newBase, subtract newBase & add 1 to 'tens' digit
+        }
+        //long inValue = inNum.value;
+        long[] newDigs = new long[3];
+        newDigs[0] = 32;
+//        while(inValue>=inNum.base){
+//
+//        }
+        for(int i = 0; i < newDigs.length; i++){   //make this printArray method?
+            System.out.print(newDigs[i]);
+        }
     }
+
+
 }
 
 
