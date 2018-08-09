@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f9853b6-5108-4235-8b62-816a4180d0f9" name="Default" comment="Clean convToDec method and chars used as ints">
+    <list default="true" id="0f9853b6-5108-4235-8b62-816a4180d0f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BaseConv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseConv.java" afterDir="false" />
     </list>
@@ -18,10 +18,11 @@
       <file leaf-file-name="BaseConv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BaseConv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            <state relative-caret-position="192">
+              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
               <folding>
-                <element signature="e#0#2274#0" expanded="true" />
+                <element signature="e#0#2198#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,6 +36,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>add</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,6 +164,21 @@
       <option name="presentableId" value="Default" />
       <updated>1531884642116</updated>
     </task>
+    <task id="LOCAL-00001" summary="Allow input of changed base">
+      <created>1533766839673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533766839673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Remove convertDown(unfinished &amp; redundant) method">
+      <created>1533790315641</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533790315641</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -171,17 +192,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32763532" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32853025" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32763532" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3290993" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34472933" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34472933" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3233618" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
@@ -235,7 +257,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clean convToDec method and chars used as ints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean convToDec method and chars used as ints" />
+    <MESSAGE value="Allow input of changed base" />
+    <MESSAGE value="Remove convertDown(unfinished &amp; redundant) method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove convertDown(unfinished &amp; redundant) method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/BaseConv.java">
@@ -243,7 +267,8 @@
         <state relative-caret-position="900">
           <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding>
-            <element signature="e#0#2274#0" expanded="true" />
+            <element signature="e#0#2198#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -253,7 +278,8 @@
         <state relative-caret-position="900">
           <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding>
-            <element signature="e#0#2274#0" expanded="true" />
+            <element signature="e#0#2198#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -305,10 +331,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseConv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="192">
+          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
           <folding>
-            <element signature="e#0#2274#0" expanded="true" />
+            <element signature="e#0#2198#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

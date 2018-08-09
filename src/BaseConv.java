@@ -1,7 +1,9 @@
 //import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
 
 //import kotlin.MathKt;
-
+import java.util.*;
+import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 public class BaseConv {
     public static void main(String[] args) {
@@ -39,18 +41,18 @@ public class BaseConv {
 
 
     static String decToBase(int newBase, long decNum){
-        int[] newDigs = new int[0];
+        List<Integer> newDigs = new ArrayList<Integer>();
         int mod;
         while(decNum >= newBase){
             mod = (int) (decNum % newBase);
-            newDigs.push(mod);
+            newDigs.add(mod);
             decNum /= newBase;
         }
 //TODO: flip direction of array and make into string
         String out = "";
-        for(int i = newDigs.length - 1; i>=0; i++){
+        for(int i = newDigs.size() - 1; i>=0; i--){
             //TODO: fill in loop to give string
-            out += Integer.toString(newDigs[i]);
+            out += newDigs.get(i).toString();
         }
         return out;
     }
