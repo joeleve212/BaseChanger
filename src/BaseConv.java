@@ -19,8 +19,16 @@ public class BaseConv {
         inputNum.digits = new char[inputNum.value.length()];                    //assigns empty digits[] length equal to # of input digits
         System.out.println("What base is your input value? (2-36 is all valid) ");
         inputNum.base = a.nextInt();
+        if(inputNum.base < 2 || inputNum.base>36){                  //check that all bases are limited to decimal digits + letters
+            throw new IllegalArgumentException
+                    ("Illegal base!");
+        }
         System.out.println("What is the desired output base? (2-36 is all valid) ");
         inputNum.newBase = a.nextInt();
+        if(inputNum.newBase < 2 || inputNum.newBase>36){
+            throw new IllegalArgumentException
+                    ("Illegal base!");
+        }
     //TODO: try/catch for legit old and new bases
 //TODO: check that input num is that base, ask for return base, convert & return
 //TODO: do I need separate files? integration with Spring/firebase
@@ -30,7 +38,12 @@ public class BaseConv {
         for (int i = inputNum.digits.length - 1; i>=0; i--) {                   //populate digits[]
             inputNum.digits[i] = valueClone.charAt(0);
             valueClone = valueClone.substring(1);
+            if(inputNum.digits[i] >= inputNum.base){
+                throw new IllegalArgumentException
+                        ("The input number does not match the input base");
+            }
         }
+
         System.out.println(convertToDec(inputNum));                             //print decimal as midpoint check
         System.out.println(decToBase(inputNum.newBase, convertToDec(inputNum)));//print final converted num
     }
