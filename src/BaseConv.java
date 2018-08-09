@@ -24,7 +24,7 @@ public class BaseConv {
             valueClone = valueClone.substring(1);
         }
         System.out.println(convertToDec(inputNum));
-        System.out.println(convertToBase(newBase, convertToDec(inputNum)))
+        System.out.println(decToBase(inputNum.newBase, convertToDec(inputNum)));
     }
 
 
@@ -39,32 +39,21 @@ public class BaseConv {
 
 
     static String decToBase(int newBase, long decNum){
-//TODO: make this method do things!
-
-        return "73E";
-    }
-
-
-    static void convertDown(Number inNum){
-/*TODO: add one to 'tens' digit everytime base is subtracted from total dec value of
- TODO: leftover -> ones digit, check that each digit is under newBase
- need more efficient idea than this, but it should work
-*/
-        for(int i = 0; i<inNum.digits.length; i++){
-    //TODO: assign another array [i] = decimal versions of digits
-    //if otherarray [i] >= newBase, subtract newBase & add 1 to 'tens' digit
+        int[] newDigs = new int[0];
+        int mod;
+        while(decNum >= newBase){
+            mod = (int) (decNum % newBase);
+            newDigs.push(mod);
+            decNum /= newBase;
         }
-        //long inValue = inNum.value;
-        long[] newDigs = new long[3];
-        newDigs[0] = 32;
-//        while(inValue>=inNum.base){
-//
-//        }
-        for(int i = 0; i < newDigs.length; i++){   //make this printArray method?
-            System.out.print(newDigs[i]);
+//TODO: flip direction of array and make into string
+        String out = "";
+        for(int i = newDigs.length - 1; i>=0; i++){
+            //TODO: fill in loop to give string
+            out += Integer.toString(newDigs[i]);
         }
+        return out;
     }
-
 
 }
 
