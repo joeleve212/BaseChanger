@@ -48,15 +48,18 @@ public class BaseConv {
             newDigs.add(mod);
             decNum /= newBase;
         }
-//TODO: flip direction of array and make into string
+        newDigs.add((int) decNum);
         String out = "";
-        for(int i = newDigs.size() - 1; i>=0; i--){
-            //TODO: fill in loop to give string
-            out += newDigs.get(i).toString();
+        for(int i = newDigs.size() - 1; i>=0; i--){     //loop to transfer arrayList digits to string output
+            if(newDigs.get(i)>9){                       //check for digits that are unused in decimal
+                out += (char) (newDigs.get(i) + 54);
+            }
+            else {
+                out += newDigs.get(i).toString();
+            }
         }
         return out;
     }
-
 }
 
 
